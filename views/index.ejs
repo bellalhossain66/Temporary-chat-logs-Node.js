@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min2.css">
+</head>
+
+<body>
+    <main class="content col-lg-12">
+        <div class="row p-5">
+            <div class="col-lg-2 border-right">
+                <h6 class="mt-2 ml-2 text-dark">Register your name</h6>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-lg-12">
+                            <div class="px-4 d-none d-md-block">
+                                <div class="text-danger h6 mt-2 name-notice">name empty</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1"> <input type="text" class="form-control my-3 user-name" placeholder="Name.."></div>
+                                </div>
+                            </div>
+                            <span class="btn btn-sm btn-primary ml-4 mb-2 registration">Ok</span>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mt-4 ml-2 text-dark">Please select your account</h6>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-lg-12">
+                            <div class="px-4 d-none d-md-block">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1"> <input type="text" class="form-control my-3 search-person" placeholder="Search..."></div>
+                                </div>
+                            </div>
+                            <div class="user-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card chat-card">
+                    <div class="row g-0">
+                        <div class="col-lg-12 chat-box">
+                            <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="position-relative"> <img src="./assets/img/avatar.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"></div>
+                                    <div class="flex-grow-1 pl-3"> <strong id="1st-person"></strong>
+                                        <div class="text-muted small type-notice1 text-success"><em class="text-success">Typing...</em></div>
+                                    </div>
+                                    <div>
+                                        <span class="h4 mr-1 px-3">1st person</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="chat-messages chat-box-1st p-4"></div>
+                            </div>
+                            <div class="flex-grow-0 py-3 px-4 border-top">
+                                <div class="input-group">
+                                    <textarea class="form-control 1st-type-box" placeholder="Type your message here..."></textarea>
+                                    <button class="btn btn-primary send-msg-1st-btn">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card chat-card">
+                    <div class="row g-0">
+                        <div class="col-lg-12 chat-box">
+                            <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="position-relative"> <img src="./assets/img/avatar.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"></div>
+                                    <div class="flex-grow-1 pl-3"> <strong id="2nd-person"></strong>
+                                        <div class="text-muted small type-notice2"><em class="text-success">Typing...</em></div>
+                                    </div>
+                                    <div>
+                                        <span class="h4 mr-1 px-3">2nd person</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="chat-messages chat-box-2nd p-4"></div>
+                            </div>
+                            <div class="flex-grow-0 py-3 px-4 border-top">
+                                <div class="input-group">
+                                    <textarea class="form-control 2nd-type-box" placeholder="Type your message here..."></textarea>
+                                    <button class="btn btn-primary send-msg-2nd-btn">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="./assets/js/jquery.min.3.6.js"></script>
+<script src="./asstes/js/jquery.min.js"></script>
+<script src="./asstes/js/bootstrap.min.js"></script>
+<script src="./assets/js/indexes.js"></script>
